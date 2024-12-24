@@ -3,7 +3,7 @@ import "./style.css"
 
 function BookList(props) {
 
- console.log(props , "hii");
+  console.log(props, "Props in BookList");
   return (
     <>
     <div className="book-list">

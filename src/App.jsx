@@ -6,7 +6,6 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import { Outlet } from "react-router-dom";
-import Home from "./components/Home";
 
 
 
@@ -24,12 +23,13 @@ console.log("search text",searchText);
 
   return (
     <>
-    <Home />
-    {/* <Header /> */}
-    <Outlet />
+    
+     <Header /> 
+     
+    <Outlet /> 
 
 
-{/*   
+
     <div className="search">
       
     <h2>Search Books</h2>
@@ -37,9 +37,9 @@ console.log("search text",searchText);
     <div><input type="text"className="search-input" onChange={(e) =>setSearchText(e.target.value)}  />
     <button onClick={handelSearch}>Search</button></div>
     
-    </div> */}
+    </div> 
    
-  {/* <BookList booksData={filteredbooks} /> */}
+   <BookList booksData={filteredbooks} /> 
  
  
   </>
